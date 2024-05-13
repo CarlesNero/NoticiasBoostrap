@@ -1,0 +1,10 @@
+#navbarText, ul, li{
+    display: flex;
+    justify-content: end!important;
+    width: 100%!important;
+    align-items: end;
+    margin: 0!important;
+    padding: 0!important;
+    justify-self: end
+    
+}
