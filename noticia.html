@@ -1,173 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>AulaNews</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-		/>
-		<link rel="stylesheet" href="styles/style.css" />
-	</head>
-	<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AulaNews</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="/media/descarga.png" type="image/x-icon" />
+  </head>
+  <body>
     <nav
-    class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3"
-    style="margin-bottom: 1.5rem"
-  >
-    <div class="container-xl">
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="./media/descarga.png"
-          style="max-width: 60px"
-          class="h-8"
-          alt="..."
-        />
-        AulaNews
-      </a>
+      class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3  sticky-top"
+      style="margin-bottom: 1.5rem"
+    >
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./media/descarga.png"
+            style="max-width: 60px"
+            class="h-8"
+            alt="..."
+          />
+          AulaNews
+        </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-lg-auto d-flex align-items-center">
-          <a class="nav-item nav-link" href="/index.html">Actualidad</a>
-          <a class="nav-item nav-link" href="/internacional.html">
-            Internacional
-          </a>
-          <a class="nav-item nav-link" href="/economia.html">Economía</a>
-          <div class="dropdownHover">
-            <a class="nav-item nav-link" href="/ciencia.html">
-              Ciencia y Salud <i class="bi bi-arrow-down-short"></i>
-            </a>
-            <ul class="items-dropdownHover">
-              <li>
-                <a class="nav-item nav-link" href="/ciencia.html">
-                  Ciencia
-                </a>
-              </li>
-              <li>
-                <a class="nav-item nav-link" href="/ciencia.html">
-                  Salud
-                </a>
-              </li>
-              <li class="subDropdownHover">
-                <div class="subDropdownHover">
-                <a
-                  class="nav-item nav-link subDropdownHover"
-                  href="/futbol.html"
-                >
-                  Actividades deportivas <i class="bi bi-arrow-down-short"></i>
-                </a>
-                
-                <ul class="items-subDropdownHover">
-                  <li>
-                    <a class="nav-item nav-link" href="/futbol.html">
-                      Furbo
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-item nav-link" href="/futbol.html">
-                      Baloncesto
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="registro d-flex gap-3 align-items-center justify-content-center mt-lg-0 mt-sm-3"
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <div class="navbar-nav ms-lg-4">
-            <a class="nav-item nav-link m-0 p-0" href="/login.html">
-              Sign in
-            </a>
-          </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="mt-lg-0">
-            <a
-              href="/login.html"
-              class="btn btn-sm btn-primary w-full w-lg-auto"
-            >
-              Register
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-lg-auto d-flex align-items-center">
+            <a class="nav-item nav-link" href="/index.html">Actualidad</a>
+            <a class="nav-item nav-link" href="/internacional.html">
+              Internacional
             </a>
+            <a class="nav-item nav-link" href="/economia.html">Economía</a>
+            <div class="dropdownHover">
+              <a class="nav-item nav-link" href="/ciencia.html">
+                Ciencia y Salud <i class="bi bi-arrow-down-short"></i>
+              </a>
+              <ul class="items-dropdownHover">
+                <li>
+                  <a class="nav-item nav-link" href="/ciencia.html">
+                    Ciencia
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-item nav-link" href="/ciencia.html"> Salud </a>
+                </li>
+                <li class="subDropdownHover">
+                  <div class="subDropdownHover">
+                    <a
+                      class="nav-item nav-link subDropdownHover"
+                      href="/futbol.html"
+                    >
+                      Actividades deportivas
+                      <i class="bi bi-arrow-down-short"></i>
+                    </a>
+
+                    <ul class="items-subDropdownHover">
+                      <li>
+                        <a class="nav-item nav-link" href="/futbol.html">
+                          Furbo
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-item nav-link" href="/futbol.html">
+                          Baloncesto
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="registro d-flex gap-3 align-items-center justify-content-center mt-lg-0 mt-sm-3"
+          >
+            <div class="navbar-nav ms-lg-4">
+              <a class="nav-item nav-link m-0 p-0" href="/login.html">
+                Sign in
+              </a>
+            </div>
+
+            <div class="mt-lg-0">
+              <a
+                href="/login.html"
+                class="btn btn-sm btn-primary w-full w-lg-auto"
+              >
+                Register
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-		<main class="container d-flex gap-3 flex-column my-5">
-			<div class="imagenesProducto col-6 d-flex flex-column gap-3">
-			<div class="card ">
-				<div class="px-2 pt-2 position-relative">
-				  <img alt="..." src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=400&q=80" class="card-img">
-				 
-				</div>
-				<div class="card-body">
-				  <h3 class="text-base text-muted font-semibold mb-3">Product name</h3>
-				  <span class="d-block h3 mb-0">$399</span>
-				</div>
-			  </div>
-			  <div class="carousel d-flex gap-2">
-				<div class="card col p-2 position-relative" style=" object-fit: cover; overflow: hidden; height: 120px;" >
-							
-					<img alt="..." style="width: 100%; height: auto;"  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=400&q=80" class="card-img">
-				  </div>		<div class="card col p-2 position-relative" style=" object-fit: cover; overflow: hidden; height: 120px;" >
-							
-					<img alt="..." style="width: 100%; height: auto;"  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=400&q=80" class="card-img">
-				  </div>
-						<div class="card col p-2 position-relative" style=" object-fit: cover; overflow: hidden; height: 120px;" >
-							
-							  <img alt="..." style="width: 100%; height: auto;"  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=400&q=80" class="card-img">
-							</div>
-			  </div>
-			
+    <main class="container d-flex gap-3 flex-md-row flex-lg-row my-5">
+      <div class="imagenesProducto col-lg-8 col-sm-12 d-flex flex-column gap-3">
+        <div class="card">
+          <div class="px-2 pt-2 position-relative">
+            <img
+              alt="..."
+              src="https://images.unsplash.com/photo-1515523110800-9415d13b84a8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img"
+              style="object-fit: cover; overflow: hidden"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="text-base text-muted font-semibold mb-3">
+              Pelotas de baloncesto
+            </h3>
+            <small class="d-block h8 mb-0"
+              >En un descubrimiento que podría revolucionar el mundo deportivo,
+              expertos han confirmado que los balones son igualmente adecuados
+              para jugar baloncesto. Este hallazgo desafía las percepciones
+              convencionales, ya que se creía que los balones estaban
+              específicamente diseñados para ciertos deportes. Los especialistas
+              señalan que no existen diferencias significativas entre los
+              balones utilizados en diferentes disciplinas deportivas, lo que
+              los convierte en uno de los objetos más versátiles dentro del
+              ámbito deportivo mundial. Esta revelación sugiere que los balones
+              podrían adaptarse a una amplia gama de deportes y actividades
+              recreativas, lo que podría tener un impacto significativo en la
+              forma en que se conciben y se juegan diversos deportes. Este
+              hallazgo plantea preguntas fascinantes sobre la naturaleza de los
+              objetos deportivos y su potencial para ser utilizados de manera
+              innovadora en diversas actividades físicas. Los investigadores
+              esperan que este descubrimiento inspire nuevas ideas y enfoques en
+              el mundo del deporte y la recreación.</small
+            >
+          </div>
+        </div>
+        <div class="carousel d-flex gap-2">
+          <div
+            class="card col p-2 position-relative"
+            style="overflow: hidden; height: 120px"
+          >
+            <img
+              alt="..."
+              style="height: 100%; object-fit: cover"
+              src="https://images.unsplash.com/photo-1627627256672-027a4613d028?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img"
+            />
+          </div>
+          <div
+            class="card col p-2 position-relative"
+            style="overflow: hidden; height: 120px"
+          >
+            <img
+              alt="..."
+              style="height: 100%; object-fit: cover"
+              src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=2090&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img"
+            />
+          </div>
+          <div
+            class="card col p-2 position-relative"
+            style="overflow: hidden; height: 120px"
+          >
+            <img
+              alt="..."
+              style="height: 100%; object-fit: cover"
+              src="https://images.unsplash.com/photo-1519861531473-9200262188bf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="infoNoticia col-lg-4 col-sm-12 bg-dark rounded-3 p-3 d-flex flex-column gap-2"
+      >
+        <div
+          class="bg-danger rounded-3 p-2 w-full d-flex align-items-center gap-2 justify-content-evenly"
+        >
+          <h1 class="text-center">Noticias recientes</h1>
+        </div>
+        <div class="recientes bg-light rounded-3 p-2 px-4">
+          <a
+            href=""
+            class="w-full text-dark d-flex align-items-center gap-2 justify-content-between"
+            style="text-decoration: none"
+          >
+            <h5>Alopecia</h5>
+            <i class="bi bi-arrow-bar-right next" style="font-size: 2rem"></i>
+          </a>
+        </div>
+        <div class="recientes bg-light rounded-3 p-2 px-4">
+          <a
+            href=""
+            class="w-full text-dark d-flex align-items-center gap-2 justify-content-between"
+            style="text-decoration: none"
+          >
+            <h5>Fin de las carreras</h5>
+            <i class="bi bi-arrow-bar-right next" style="font-size: 2rem"></i>
+          </a>
+        </div>
+        <div class="recientes bg-light rounded-3 p-2 px-4">
+          <a
+            href=""
+            class="w-full text-dark d-flex align-items-center gap-2 justify-content-between"
+            style="text-decoration: none"
+          >
+            <h5>Dineros</h5>
+            <i class="bi bi-arrow-bar-right next" style="font-size: 2rem"></i>
+          </a>
+        </div>
+        <div class="recientes bg-light rounded-3 p-2 px-4">
+          <a
+            href=""
+            class="w-full text-dark d-flex align-items-center gap-2 justify-content-between"
+            style="text-decoration: none"
+          >
+            <h5>Suben las ventas de bolas del mundo</h5>
+            <i class="bi bi-arrow-bar-right next" style="font-size: 2rem"></i>
+          </a>
+        </div>
+        <div class="recientes bg-light rounded-3 p-2 px-4">
+          <a
+            href=""
+            class="w-full text-dark d-flex align-items-center gap-2 justify-content-between"
+            style="text-decoration: none"
+          >
+            <h5>El Raymon gana de nuevo</h5>
+            <i class="bi bi-arrow-bar-right next" style="font-size: 2rem"></i>
+          </a>
+        </div>
+        <div class="recientes bg-light rounded-3 p-2 px-4">
+          <a
+            href=""
+            class="w-full text-dark d-flex align-items-center gap-2 justify-content-between"
+            style="text-decoration: none"
+          >
+            <h5>Grupos terroristas</h5>
+            <i class="bi bi-arrow-bar-right next" style="font-size: 2rem"></i>
+          </a>
+        </div>
+        <div class="recientes bg-light rounded-3 p-2 px-4">
+          <a
+            href=""
+            class="w-full text-dark d-flex align-items-center gap-2 justify-content-between"
+            style="text-decoration: none"
+          >
+            <h5>Jovenes sin dinero</h5>
+            <i class="bi bi-arrow-bar-right next" style="font-size: 2rem"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-3">
+      <nav class="navbar bg-dark">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-center m-0"
+        >
+          <a
+            class="navbar-brand text-light d-flex align-items-center gap-4 justify-content-center"
+            href="#"
+            ><img
+              src="media/descarga.png"
+              alt=""
+              style="width: 50px"
+            />AulaNews</a
+          >
+        </div>
+      </nav>
+    </footer>
 
-		</main>
-		<footer class="my-3">
-			<nav aria-label="Page navigation example">
-				<ul class="pagination d-flex justify-content-center">
-					<li class="page-item">
-						<a class="page-link" href="#">
-							<i class="bi bi-chevron-left"></i>
-						</a>
-					</li>
-					<li class="page-item"><a class="page-link" href="#">1</a></li>
-					<li class="page-item"><a class="page-link" href="#">2</a></li>
-					<li class="page-item"><a class="page-link" href="#">3</a></li>
-					<li class="page-item"><a class="page-link" href="#">4</a></li>
-					<li class="page-item"><a class="page-link" href="#">5</a></li>
-					<li class="page-item">
-						<a class="page-link" href="#">
-							<i class="bi bi-chevron-right"></i>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</footer>
-
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
-	</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
