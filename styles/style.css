@@ -1,4 +1,38 @@
-.card-img{
-    height: 250px;
-    width: 100%;
+.card-img {
+	height: 250px;
+	width: 100%;
+}
+
+.dropdownHover {
+	position: relative;
+    
+}
+
+.items-dropdownHover,
+.items-subDropdownHover {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	background-color: #212529;
+	padding: 1rem;
+	list-style: none;
+	text-wrap: nowrap;
+    width: 250px;
+    border-radius: 5px;
+    text-align: left;
+    
+    & a{
+        color: white;
+    }
+    
+}
+
+.dropdownHover:hover .items-dropdownHover {
+	display: flex;
+	flex-direction: column;
+}
+
+.subDropdownHover:hover .items-subDropdownHover {
+	display: flex;
+	flex-direction: column;
 }

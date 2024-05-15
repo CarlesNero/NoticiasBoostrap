@@ -46,47 +46,66 @@
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-lg-auto d-flex align-items-center">
-          <a class="nav-item nav-link" href="/">Actualidad</a>
-          <a class="nav-item nav-link" href="/internacional.html"
-            >Internacional</a
-          >
-          <a class="nav-item nav-link" href="/economia.html"
-            >Economía</a
-          >
-          <div class="dropdown">
-            <button
-              class="btn btn-sm btn-neutral dropdown-toggle text-danger"
-              type="button"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Ciencia y Salud
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="/ciencia.html">Ciencia</a>
-              <a class="dropdown-item" href="/salud.html">Salud</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/deportes.html"
-                >Actividades deportivas</a
-              >
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Furbo</a>
-              <a class="dropdown-item" href="#">Basquet</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Baloncesto</a>
-            </div>
+          <a class="nav-item nav-link" href="/index.html">Actualidad</a>
+          <a class="nav-item nav-link" href="/internacional.html">
+            Internacional
+          </a>
+          <a class="nav-item nav-link" href="/economia.html">Economía</a>
+          <div class="dropdownHover">
+            <a class="nav-item nav-link" href="/ciencia.html">
+              Ciencia y Salud <i class="bi bi-arrow-down-short"></i>
+            </a>
+            <ul class="items-dropdownHover">
+              <li>
+                <a class="nav-item nav-link" href="/ciencia.html">
+                  Ciencia
+                </a>
+              </li>
+              <li>
+                <a class="nav-item nav-link" href="/ciencia.html">
+                  Salud
+                </a>
+              </li>
+              <li class="subDropdownHover">
+                <div class="subDropdownHover">
+                <a
+                  class="nav-item nav-link subDropdownHover"
+                  href="/internacional.html"
+                >
+                  Actividades deportivas <i class="bi bi-arrow-down-short"></i>
+                </a>
+                
+                <ul class="items-subDropdownHover">
+                  <li>
+                    <a class="nav-item nav-link" href="/futbol.html">
+                      Furbo
+                    </a>
+                  </li>
+                  <li>
+                    <a class="nav-item nav-link" href="/futbol.html">
+                      Baloncesto
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              </li>
+            </ul>
           </div>
         </div>
         <div
           class="registro d-flex gap-3 align-items-center justify-content-center mt-lg-0 mt-sm-3"
         >
           <div class="navbar-nav ms-lg-4">
-            <a class="nav-item nav-link m-0 p-0" href="/login.html">Sign in</a>
+            <a class="nav-item nav-link m-0 p-0" href="/login.html">
+              Sign in
+            </a>
           </div>
 
           <div class="mt-lg-0">
-            <a href="/login.html" class="btn btn-sm btn-primary w-full w-lg-auto">
+            <a
+              href="/login.html"
+              class="btn btn-sm btn-primary w-full w-lg-auto"
+            >
               Register
             </a>
           </div>
